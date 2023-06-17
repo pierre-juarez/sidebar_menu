@@ -12,7 +12,7 @@
 		5594A5562A3D39230076C85B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5594A5552A3D39230076C85B /* Assets.xcassets */; };
 		5594A5592A3D39230076C85B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5594A5582A3D39230076C85B /* Preview Assets.xcassets */; };
 		5594A5602A3D5A980076C85B /* sideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594A55F2A3D5A980076C85B /* sideMenu.swift */; };
-		5594A5642A3D5B450076C85B /* tabViewV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594A5632A3D5B450076C85B /* tabViewV.swift */; };
+		5594A5662A3D5BDD0076C85B /* slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594A5652A3D5BDD0076C85B /* slider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,7 @@
 		5594A5552A3D39230076C85B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5594A5582A3D39230076C85B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5594A55F2A3D5A980076C85B /* sideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideMenu.swift; sourceTree = "<group>"; };
-		5594A5632A3D5B450076C85B /* tabViewV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabViewV.swift; sourceTree = "<group>"; };
+		5594A5652A3D5BDD0076C85B /* slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 				5594A5552A3D39230076C85B /* Assets.xcassets */,
 				5594A5572A3D39230076C85B /* Preview Content */,
 				5594A55F2A3D5A980076C85B /* sideMenu.swift */,
-				5594A5632A3D5B450076C85B /* tabViewV.swift */,
+				5594A5652A3D5BDD0076C85B /* slider.swift */,
 			);
 			path = sidebarMenu;
 			sourceTree = "<group>";
@@ -144,8 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5594A5542A3D39210076C85B /* ContentView.swift in Sources */,
-				5594A5642A3D5B450076C85B /* tabViewV.swift in Sources */,
 				5594A5522A3D39210076C85B /* sidebarMenuApp.swift in Sources */,
+				5594A5662A3D5BDD0076C85B /* slider.swift in Sources */,
 				5594A5602A3D5A980076C85B /* sideMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

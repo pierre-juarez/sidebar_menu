@@ -41,13 +41,36 @@ struct sideMenu: View {
             Color("bgSlide")
                 .frame(width: 266)
                 .mask(RoundedRectangle(cornerRadius: 10, style: .continuous))
-            VStack{
-                VStack{
+            VStack(alignment: .leading){
+                VStack(alignment: .leading){
                     userProfile()
                     tabView(selectedItem: $selectedItem, yOffset: $yOffset)
-                    divider()
-                }
+                    
+                    
+                }.padding(.leading, 15)
                 Spacer()
+                divider()
+                slider()
+                HStack{
+                    Text("Learn more about the app")
+                        .padding(.leading)
+                    Image(systemName: "questionmark.circle")
+                }
+                .foregroundColor(.white)
+                .padding(.top, 5)
+                Spacer()
+                HStack{
+                    Bicon(icon: "moon.zzz.fill")
+                    Spacer()
+                    Text("Shoping")
+                        .foregroundColor(.white)
+                    Spacer()
+                    Bicon(icon: "gearshape.fill")
+                }
+                .padding(.bottom, 20)
+                .frame(width: 230, height: 90)
+                .padding(.leading, 17)
+                
             }
             
         }
@@ -94,7 +117,7 @@ struct tabView: View {
     var body: some View{
         ZStack(alignment: .leading){
             Rectangle()
-                .frame(width: isAnimation ? 10: 230, height: 45)
+                .frame(width: isAnimation ? 7 : 230, height: 45)
                 .foregroundColor(Color("selectTab"))
                 .cornerRadius(7)
                 .offset(y: yOffset)
@@ -143,7 +166,7 @@ struct tabView: View {
                         .padding(.top, 30)
                         
                     }
-
+                    
                 }
             }
             .frame(width: 240, height: 330)
@@ -159,6 +182,22 @@ struct divider: View {
             .frame(width: 266, height: 1)
             .foregroundColor(.gray.opacity(0.4))
             .padding(.top,30)
+    }
+    
+}
+
+struct Bicon: View{
+    
+    var icon = ""
+    
+    var body: some View{
+        ZStack{
+            Circle()
+                .frame(width: 48, height: 48)
+                .foregroundStyle(.ultraThinMaterial)
+            Image(systemName: icon)
+                .foregroundColor(.white)
+        }
     }
     
 }
